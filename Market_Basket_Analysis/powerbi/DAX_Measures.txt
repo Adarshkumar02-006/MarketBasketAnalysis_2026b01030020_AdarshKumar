@@ -1,0 +1,5 @@
+Total Baskets = DISTINCTCOUNT(transactions_clean[basket_id])
+Total Revenue = SUM(transactions_clean[line_total])
+Avg Basket Size = DIVIDE(SUM(transactions_clean[quantity]), [Total Baskets], 0)
+Top Lift = MAX(association_rules[lift])
+Avg Confidence = AVERAGE(association_rules[confidence])

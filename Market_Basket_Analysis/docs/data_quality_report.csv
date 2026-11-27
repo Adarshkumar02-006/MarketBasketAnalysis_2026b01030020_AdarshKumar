@@ -1,0 +1,3 @@
+issue,rule_applied,rows_affected
+Missing customer_id,Imputed missing customer_id as GUEST,15
+Duplicate lines in basket,"Summed quantity for duplicate (basket_id, product_id) lines",19
