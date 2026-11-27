@@ -1,0 +1,15 @@
+├── data/
+│   ├── raw/                  # Raw synthetic transactional & product CSVs
+│   └── clean/                # Deduplicated, standardized datasets & association rules
+├── docs/
+│   ├── data_quality_log.csv  # Row-level audit log of data cleaning rules
+│   └── Project_Report.docx   # Full project documentation & dashboard visuals
+├── powerbi/
+│   └── DAX_Measures.md       # DAX formulas & Power BI visual setup guide
+├── sql/
+│   ├── 01_schema_ddl.sql     # Oracle SQL Star Schema DDL with constraints
+│   └── 02_market_basket_views.sql # Self-join item pair queries & KPI views
+└── src/
+    ├── 01_generate_data.py   # Reproducible dataset generator (with edge test cases)
+    ├── 02_clean_data.py      # Automated data cleaning & audit logger
+    └── 03_association_rules.py # Support, Confidence & Lift engine
